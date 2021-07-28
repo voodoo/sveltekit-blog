@@ -1,31 +1,41 @@
-<script>
-import PokemanCard from "../components/pokemanCard.svelte";
-import {pokemon, fetchPokemon} from "../pokestore";
+<section class="header relative pt-16 items-center flex  max-h-860-px">
+    <div class="container mx-auto items-center flex flex-wrap">
+      <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+        <div class="pt-32 sm:pt-0">
+          <h2 class="font-semibold text-4xl text-blueGray-600">
+            Hybrid Heros are mobile hybrid mechanics - and we are nationwide!
+          </h2>
+          <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+            We come to you! Our mechanics are trained and vetted. Work is guaranteed. 
+            <!-- <a
+              href="https://tailwindcss.com/?ref=creativetim"
+              class="text-blueGray-600"
+              target="_blank"
+            >
+              Tailwind CSS.
+            </a> -->
+            Get a free quote over the phone, or, even better, have a mechanic come to you to evaluate your hybrid.
+          </p>
+          <div class="mt-12">
+            <a
+              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index"
+              target="_blank"
+              class="get-started ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+            >
+              Get a mechanic
+            </a>
+            <a
+              href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index"
+              class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-400 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              target="_blank"
+            >
+              Get a quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
-let searchTerm = "";
-let filteredPokemon = [];
-
-$: {
-    if(searchTerm){
-        filteredPokemon = $pokemon.filter( pokeman => pokeman.name.toLowerCase().includes(searchTerm.toLowerCase()));
-    }
-    else {
-        filteredPokemon = [...$pokemon];
-    }
-}
-
-fetchPokemon();
-</script>
-<svelte:head>
-	<title>Pokedex</title>
-</svelte:head>
-
-<h1 class="text-4xl text-center my-8 uppercase">SvelteKit Pokedex</h1>
-<input class="w-full rounded-md text-lg p-4 border-2 border-gray-200" bind:value={searchTerm} placeholder="Search Pokemon">
-<div class="py-4 grid gap-4 md:grid-cols-2 grid-cols-1">
-    
-    {#each filteredPokemon as pokeman}
-            <PokemanCard pokeman={pokeman}/>
-    {/each}
-</div>
-    
+  </section>
+  
