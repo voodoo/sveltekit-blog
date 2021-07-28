@@ -18,7 +18,7 @@
 	<!-- mobile menu bar -->
 	<div class="bg-gray-800 text-gray-100 flex justify-between md:hidden">
 		<!-- logo -->
-		<a href="#" class="block p-4 text-white font-bold">Better Dev</a>
+		<a href="/" class="block p-4 text-white font-bold">Better Dev</a>
 
 		<!-- mobile menu button -->
 		<button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">

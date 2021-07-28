@@ -1,12 +1,22 @@
 <section class="header relative pt-16 items-center flex  max-h-860-px">
     <div class="container mx-auto items-center flex flex-wrap">
-      <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+      <div class="w-full">
         <div class="pt-32 sm:pt-0">
           <h2 class="font-semibold text-4xl text-blueGray-600">
-            Hybrid Heros are mobile hybrid mechanics - and we are nationwide!
+            Hybrid Heros are mobile hybrid mechanics
           </h2>
+          <h3 class="text-green-500">
+            who come to you!
+          </h3>
+          <div class="w-full p-10">
+
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Zipcode">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+              Find a hero near your location
+            </label>
+          </div>          
           <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-            We come to you! Our mechanics are trained and vetted. Work is guaranteed. 
+             Our mechanics are trained and vetted. Work is guaranteed. 
             <!-- <a
               href="https://tailwindcss.com/?ref=creativetim"
               class="text-blueGray-600"
@@ -16,7 +26,7 @@
             </a> -->
             Get a free quote over the phone, or, even better, have a mechanic come to you to evaluate your hybrid.
           </p>
-          <div class="mt-12">
+          <!-- <div class="mt-12">
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index"
               target="_blank"
@@ -31,7 +41,7 @@
             >
               Get a quote
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
