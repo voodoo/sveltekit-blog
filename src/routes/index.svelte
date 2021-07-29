@@ -1,92 +1,56 @@
-<style >
-  ul{
-    list-style: disc;
-  }
-  li{
-    margin-left: 32px;
-    padding-left: 12px;
-  }
-  h4{
+<script>
+	import States from '$lib/States.svelte'
+</script>
+<form data-netlify="true" name="customer" action="/confirm">
+  <section class="header relative pt-16 items-center flex  max-h-860-px">
+    <div class="container mx-auto items-center flex flex-wrap">
+      <div class="w-full">
+        <div class="pt-32 sm:pt-0">
+          <h2 class="font-semibold text-4xl text-blueGray-600">
+            Hybrid Heros are mobile hybrid mechanics
+          </h2>
+          <h3 class="text-green-500">who come to you!</h3>
+  
+          <h3 class="italic text-gray-800">Find a hybrid mechanic near your location</h3>
+  <States/>
+          <p class="mt-3">
+            Let us know where and we will let you know when we service that area.
+          </p>
+            
+  
+          <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+            Our mechanics are trained and vetted. Work is guaranteed.
+            <!-- <a
+                href="https://tailwindcss.com/?ref=creativetim"
+                class="text-blueGray-600"
+                target="_blank"
+              >
+                Tailwind CSS.
+              </a> -->
+            Get a free quote over the phone, or, even better, have a mechanic come to you to evaluate your
+            hybrid.
+          </p>
+          <!-- <div class="mt-12">
+              <a
+                href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index"
+                target="_blank"
+                class="get-started ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                Get a mechanic
+              </a>
+              <a
+                href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index"
+                class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-400 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                target="_blank"
+              >
+                Get a quote
+              </a>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <input type="text" name="zipcode" placeholder="Zipcode">
+  <input type="submit" value="Send" >
+</form>
 
-     margin-left:-10px;
-     color: #666;
-  }
-
-</style>
-<section class="header relative pt-16 items-center flex  max-h-860-px">
-	<div class="container mx-auto items-center flex flex-wrap">
-		<div class="w-full">
-			<div class="pt-32 sm:pt-0">
-				<h2 class="font-semibold text-4xl text-blueGray-600">
-					Hybrid Heros are mobile hybrid mechanics
-				</h2>
-				<h3 class="text-green-500">who come to you!</h3>
-				<!-- <div class="w-full p-10">
-					<input
-						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-						id="username"
-						type="text"
-						placeholder="Zipcode"
-					/>
-					<label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-						Find a hero near your location
-					</label>
-				</div> -->
-				<h3>Find a hero near your location</h3>
-				<h4>Texas</h4>
-				<ul>
-					<li>Austin</li>
-					<li>Dallas</li>
-					<li>Houston</li>
-					<li>San Antonio</li>
-				</ul>
-				<h4>California</h4>
-				<ul>
-					<li>San Francisco</li>
-					<li>Los Angeles</li>
-					<li>San Diego</li>
-				</ul>
-				<h4>Florida</h4>
-				<ul>
-					<li>Jacksonville</li>
-					<li>Miami</li>
-					<li>Tampa</li>
-				</ul>
-        <h4>Other?</h4>
-        <p class="mt-3">
-          Let us know where and we will let you know when we service that area.
-        </p>
-          
-
-				<p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-					Our mechanics are trained and vetted. Work is guaranteed.
-					<!-- <a
-              href="https://tailwindcss.com/?ref=creativetim"
-              class="text-blueGray-600"
-              target="_blank"
-            >
-              Tailwind CSS.
-            </a> -->
-					Get a free quote over the phone, or, even better, have a mechanic come to you to evaluate your
-					hybrid.
-				</p>
-				<!-- <div class="mt-12">
-            <a
-              href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus?ref=ns-index"
-              target="_blank"
-              class="get-started ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-red-400 active:bg-red-500 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-            >
-              Get a mechanic
-            </a>
-            <a
-              href="https://github.com/creativetimofficial/notus-svelte?ref=ns-index"
-              class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-400 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
-              target="_blank"
-            >
-              Get a quote
-            </a>
-          </div> -->
-			</div>
-		</div>
-	</div>
-</section>
