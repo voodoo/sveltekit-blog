@@ -1,7 +1,11 @@
+<script context="module">
+	export const prerender = true;
+</script>
 <script>
 	import States from '$lib/States.svelte'
 </script>
-<form data-netlify="true" name="customer" method="post" action="/confirm">
+<form data-netlify="true"  method="post">
+  <input type="hidden" name="form-name" value="customer" />
   <section class="header relative pt-16 items-center flex  max-h-860-px">
     <div class="container mx-auto items-center flex flex-wrap">
       <div class="w-full">
