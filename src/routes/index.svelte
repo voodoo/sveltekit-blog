@@ -1,7 +1,7 @@
 <script>
 	import States from '$lib/States.svelte'
 </script>
-<form data-netlify="true" name="customer" action="/confirm">
+<form data-netlify="true" name="customer" method="post" action="/confirm">
   <section class="header relative pt-16 items-center flex  max-h-860-px">
     <div class="container mx-auto items-center flex flex-wrap">
       <div class="w-full">
