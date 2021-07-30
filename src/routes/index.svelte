@@ -4,7 +4,7 @@
 <script>
 	import States from '$lib/States.svelte'
 </script>
-<form data-netlify="true"  method="post">
+<form data-netlify="true"  method="post" action="/confirm">
   <input type="hidden" name="form-name" value="customer" />
   <section class="header relative pt-16 items-center flex  max-h-860-px">
     <div class="container mx-auto items-center flex flex-wrap">
