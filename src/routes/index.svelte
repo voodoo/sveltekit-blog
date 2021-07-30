@@ -4,7 +4,7 @@
 <script>
 	import States from '$lib/States.svelte'
 </script>
-<form data-netlify="true"  method="post" action="/confirm">
+<form data-netlify="true"  method="post" name="customer">
   <input type="hidden" name="form-name" value="customer" />
   <section class="header relative pt-16 items-center flex  max-h-860-px">
     <div class="container mx-auto items-center flex flex-wrap">
@@ -55,6 +55,7 @@
     </div>
   </section>
   <input type="text" name="zipcode" placeholder="Zipcode">
+  <input type="text" name="name" placeholder="Your name">
   <input type="submit" value="Send" >
 </form>
 
